@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Linking to the external CSS file for styling the portfolio -->
+    <link rel="stylesheet" href="portfolio.css">
+
+    <!-- Linking to Font Awesome for the icons used throughout the portfolio -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Header Section with Navigation -->
+    <header class="header">
+        <!-- Portfolio Logo -->
+        <a href="#" class="logo">Portfolio</a>
+
+        <!-- Menu Icon for mobile view -->
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+        <!-- Navigation Bar with links to different sections of the page -->
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Service</a>
+            <a href="#portfolio"> Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+
+
+    </header>
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <!-- Introduction Content -->
+            <h3>Hello, It's Me</h3>
+            <h1>Tushar Pancha</h1>
+            <h3>And I'm a <span class="typing-effect">Frontend Developer</span></h3>
+
+            <!-- Brief Description of the Developer -->
+            <p>As a web developer, I am passionate about creating robust and user friendly web applications. Proficient
+                in frontend technologies and framework ,Proficient in backend Development & Database</p>
+
+            <!-- Social Media Links -->
+            <div class="social-media">
+                <a href="https://www.facebook.com/tushar.pancha.54?mibextid=ZbWKwL"><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/tushar_pancha1?igsh=MWFkZGk3bnp4aW1mNQ=="><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+            </div>
+
+            <!-- CV Download Section -->
+            <div class="container">
+                <label class="label">
+                    <input type="checkbox" class="input" />
+                    <span class="circle">
+                        
+                            <a href="/frontend/cv.pdf" download="CV" id="download-link" onclick="showOpenButton()">
+                                <!-- Icon for Download -->
+                                <svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                    viewBox="0 0 24 24">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="1.5" d="M12 19V5m0 14-4-4m4 4 4-4"></path>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="square"></div>
+                    </span>
+                    <!-- Download Button -->
+                    <p class="title" id="cv-button" style="margin-right: 40px;">
+                        <a href="/frontend/cv.html" download="CV" id="download-button" onclick="showOpenButton()"
+                            style="color: aliceblue;">CV</a>
+                    </p>
+                    <!-- Open Button (Initially hidden) -->
+                    <p class="title" id="open-button"
+                        style="visibility: hidden; opacity: 0; transition: opacity 0.5s ease, visibility 0s 0.5s;">
+                        <a href="/frontend/cv.html" target="_blank"
+                            style="color: aliceblue; margin-right: 35px;">Open</a>
+                    </p>
+                </label>
+            </div>
+        </div>
+
+        <!-- Image Section -->
+        <div class="home-img">
+            <img src="/462855877_923961206249586_1235147684427855245_n.jpg" alt=""
+                style="border-radius: 50%;  box-shadow: 0 0 1rem skyblue;">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <!-- About Image -->
+            <img src="/462855877_923961206249586_1235147684427855245_n.jpg" alt=""
+                style="border-radius: 50%;  box-shadow: 0 0 1rem skyblue ">
+        </div>
+
+        <div class="about-content">
+            <!-- About Heading -->
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Frontend Developer</h3>
+            <!-- Brief Introduction -->
+            <p>Tech-savvy professional with solid experience in developing and maintaining websites using HTML, CSS, and
+                JavaScript in frontend and nodejs and mongo db in backend an DB, React as a framework. Adept in
+                troubleshooting and debugging code, ensuring smooth functionality and user-friendly
+                interfaces. Strong communication skills, collaborating effectively with designers and project managers
+                to deliver high-quality digital solutions.</p>
+
+            <!-- Read More Button -->
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <h2 class="heading">Our <span>Services</span></h2>
+
+        <!-- Service Boxes -->
+        <div class="services-container">
+            <div class="services-box">
+                <i class="fa-solid fa-code"></i>
+                <h3>Web Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, eum. Dolore asperiores nihil
+                    necessitatibus id commodi non fugiat magni odit?</p>
+                <a href="/frontend/index.html" class="btn">Read More</a>
+            </div>
+
+            <div class="services-box">
+                <i class="fa-solid fa-paintbrush"></i>
+                <h3>UI/UX Design</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, eum. Dolore asperiores nihil
+                    necessitatibus id commodi non fugiat magni odit?</p>
+                <a href="/frontend/index.html" class="btn">Read More</a>
+            </div>
+
+            <div class="services-box">
+                <i class="fa-solid fa-database"></i>
+                <h3>Database Management</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, eum. Dolore asperiores nihil
+                    necessitatibus id commodi non fugiat magni odit?</p>
+                <a href="/frontend/index.html" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Project</span></h2>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="/images-2.jpeg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, dolor?</p>
+                    <a href="/frontend/index.html" class="icon-link">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        <span class="tooltip-text">Click to view project</span>
+                    </a>
+
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="/images-3.jpeg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, dolor?</p>
+                    <a href="/frontend/index.html" class="icon-link">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        <span class="tooltip-text">Click to view project</span>
+                    </a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="/images-4.jpeg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, dolor?</p>
+                    <a href="/frontend/index.html" class="icon-link">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        <span class="tooltip-text">Click to view project</span>
+                    </a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="/images-5.jpeg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, dolor?</p>
+                    <a href="/frontend/index.html" class="icon-link">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        <span class="tooltip-text">Click to view project</span>
+                    </a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="/images-6.jpeg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, dolor?</p>
+                    <a href="/frontend/index.html" class="icon-link">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        <span class="tooltip-text">Click to view project</span>
+                    </a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="/images.jpeg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, dolor?</p>
+                    <a href="/frontend/index.html" class="icon-link">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        <span class="tooltip-text">Click to view project</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <form id="contactForm">
+            <div class="input-box">
+                <input type="text" id="fullName" placeholder="Full Name" required>
+                <input type="email" id="email" placeholder="Email Address" required>
+            </div>
+
+            <div class="input-box">
+                <input type="number" id="mobile" placeholder="Mobile Number" required>
+                <input type="text" id="subject" placeholder="Subject" required>
+            </div>
+            <textarea id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+
+            <button value="send message">
+                <div class="svg-wrapper-1">
+                    <div class="svg-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="none" d="M0 0h24v24H0z"></path>
+                            <path fill="currentColor"
+                                d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+                <span style="color: white;">Send</span>
+            </button>
+
+        </form>
+    </section>
+    <div>
+        <!-- User Rating Section -->
+        <section class="user-rating">
+            <h2 class="heading">Rate My Portfolio</h2>
+            <div class="rating-container">
+                <span class="star" data-value="1">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="5">&#9733;</span>
+            </div>
+            <div class="rating-result">
+                <p>Your Rating: <span id="rating-value">0</span></p>
+            </div>
+            <div class="rating-feedback">
+                <textarea id="rating-feedback-text" placeholder="Leave a comment (optional)"></textarea>
+                <button id="submit-rating">Submit Rating</button>
+            </div>
+            <div id="submitted-data" style="visibility: hidden;">
+                <h3>Thank you for your rating!</h3>
+                <p>Rating: <span id="submitted-rating"></span></p>
+                <p>Your Feedback: <span id="submitted-feedback"></span></p>
+            </div>
+        </section>
+
+
+        <footer class="footer">
+            <div class="footer-text">
+                <p>Copyright &copy; 2024 Developed by <span style="font-size: x-large; color: skyblue;">Tushar
+                        Pancha</span> | All Right Reserved.</p>
+            </div>
+            <div class="footer-iconTop">
+                <a href="#home"><i class="fa-solid fa-arrow-up"></i></a>
+            </div>
+        </footer>
+
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+        <script src="/frontend/portfolio.js"></script>
+        <script>
+            // JavaScript for User Rating System
+            // JavaScript for User Rating System with Feedback
+            // Variables to keep track of the selected rating
+            const stars = document.querySelectorAll('.star');
+            const ratingValue = document.getElementById('rating-value');
+            const submitButton = document.getElementById('submit-rating');
+            const ratingFeedback = document.getElementById('rating-feedback-text');
+            const submittedData = document.getElementById('submitted-data');
+            const submittedRating = document.getElementById('submitted-rating');
+            const submittedFeedback = document.getElementById('submitted-feedback');
+
+            let rating = 0; // Default rating value
+
+            // Event listener for star selection
+            stars.forEach(star => {
+                star.addEventListener('click', () => {
+                    rating = parseInt(star.getAttribute('data-value'));
+                    ratingValue.textContent = rating;
+
+                    // Highlight the stars based on the selected rating
+                    stars.forEach(s => s.classList.remove('selected'));
+                    for (let i = 0; i < rating; i++) {
+                        stars[i].classList.add('selected');
+                    }
+                });
+            });
+
+            // Event listener for submit button
+            submitButton.addEventListener('click', () => {
+                const feedbackText = ratingFeedback.value.trim();
+
+                // Save the data to localStorage
+                localStorage.setItem('userRating', rating);
+                localStorage.setItem('userFeedback', feedbackText);
+
+                // Display the submitted data
+                submittedRating.textContent = rating;
+                submittedFeedback.textContent = feedbackText || 'No feedback provided';
+                submittedData.style.visibility = 'visible';
+
+                // Clear the form after submission
+                ratingFeedback.value = '';
+                ratingValue.textContent = '0';
+                stars.forEach(star => star.classList.remove('selected'));
+            });
+
+            // Load saved data from localStorage if it exists
+            window.addEventListener('load', () => {
+                const savedRating = localStorage.getItem('userRating');
+                const savedFeedback = localStorage.getItem('userFeedback');
+
+                if (savedRating) {
+                    // Display saved rating
+                    ratingValue.textContent = savedRating;
+                    for (let i = 0; i < savedRating; i++) {
+                        stars[i].classList.add('selected');
+                    }
+                }
+
+                if (savedFeedback) {
+                    // Display saved feedback
+                    ratingFeedback.value = savedFeedback;
+                    submittedRating.textContent = savedRating;
+                    submittedFeedback.textContent = savedFeedback;
+                    submittedData.style.visibility = 'visible';
+                }
+            });
+
+            // Function to show the "Open" button and hide the "CV" button after download
+            function showOpenButton() {
+                const openButton = document.getElementById('open-button');
+                const cvButton = document.getElementById('cv-button');
+
+                // Hide the CV button
+                cvButton.style.display = 'none';
+
+                // Make the "Open" button visible, trigger the opacity animation
+                openButton.style.visibility = 'visible'; // Make it participate in the layout
+                setTimeout(() => {
+                    openButton.style.opacity = 1; // Fade in with opacity
+                }, 10);  // slight delay to trigger CSS transition
+            }
+            document.addEventListener('DOMContentLoaded', () => {
+                const textArray = ["Frontend Developer", "Backend Developer", "UI/UX Designer"];
+                const typingElement = document.querySelector('.typing-effect');
+                let textIndex = 0;
+                let charIndex = 0;
+                let currentText = textArray[textIndex];
+
+                function typeText() {
+                    if (charIndex < currentText.length) {
+                        typingElement.textContent += currentText[charIndex];
+                        charIndex++;
+                        setTimeout(typeText, 120); // Typing speed (100ms per character)
+                    } else {
+                        setTimeout(eraseText, 1000); // Wait before erasing
+                    }
+                }
+
+                function eraseText() {
+                    if (charIndex > 0) {
+                        typingElement.textContent = currentText.slice(0, charIndex - 1);
+                        charIndex--;
+                        setTimeout(eraseText, 50); // Erasing speed (50ms per character)
+                    } else {
+                        textIndex = (textIndex + 1) % textArray.length; // Move to the next text
+                        currentText = textArray[textIndex];
+                        setTimeout(typeText, 500); // Wait before typing the next text
+                    }
+                }
+
+                typeText();
+            });
+
+            document.getElementById('contactForm').addEventListener('submit', async function (e) {
+                e.preventDefault();
+
+                // Gather form data
+                const fullName = document.getElementById('fullName').value;
+                const email = document.getElementById('email').value;
+                const mobile = document.getElementById('mobile').value;
+                const subject = document.getElementById('subject').value;
+                const message = document.getElementById('message').value;
+
+                // Prepare data for API request
+                const formData = {
+                    fullName,
+                    email,
+                    mobile,
+                    subject,
+                    message
+                };
+
+                try {
+                    // Make a POST request to the backend API
+                    const response = await fetch('http://localhost:9000/api/contact', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify(formData)
+                    });
+
+                    const data = await response.json();
+                    if (response.ok) {
+                        alert(data.msg); // Message sent successfully
+                        document.getElementById('contactForm').reset();
+                    } else {
+                        alert(data.msg); // Error message
+                    }
+                } catch (error) {
+                    alert('Error: Could not send message😢.');
+                }
+            });
+        </script>
+</body>
+
+</html>
